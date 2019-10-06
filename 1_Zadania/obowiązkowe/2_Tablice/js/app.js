@@ -10,3 +10,16 @@ function distFromAverage(array) {
 
     return resultArray;
 }
+
+// Zadanie 1
+var fruits = ["apple", "orange", "banana", "blackberry"]
+//1
+console.log(fruits[0]);
+
+//2
+console.log(fruits[fruits.length - 1]);
+
+//3
+for(i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
