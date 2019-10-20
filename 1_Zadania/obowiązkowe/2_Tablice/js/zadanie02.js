@@ -1,8 +1,8 @@
-
+// Zadanie 2
 function createArray(number) {
     var newArray = [];
 
-    for (var counter = 1; counter <= number; counter++) {
+    for (counter = 1; counter <= number; counter++) {
         newArray.push(counter);
     }
 
