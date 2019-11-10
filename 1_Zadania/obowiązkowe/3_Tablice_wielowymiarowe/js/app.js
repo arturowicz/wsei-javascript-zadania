@@ -51,3 +51,39 @@ function getLengthOfAllInnerArray(array) {
     array.forEach((inner) => inner.forEach((number) => console.log(number)));
 }
 
+// Zadanie 3
+
+function print2DArray(array) {
+    array.flat().forEach((number) => console.log(number));
+}
+
+// Zadanie 4 
+
+var task3Array = [
+    [1, 1, 1, 1],
+    [0, 1, 2, 3],
+    [9, 10, 11, 12]
+];
+
+print2DArray(task3Array);
+
+// Zadanie 5 
+
+function create2DArray(a, b) {
+    var outerArray = [];
+    var counter = 1;
+    
+    for(var x = 0; x < a; x++) {
+        var innerArray = [];
+        for(var y = 0; x < b; y++) {
+            innerArray.push(counter);
+            counter++;
+        }
+        outerArray.push(innerArray);
+    }
+
+    return outerArray;
+}
+
+
+
