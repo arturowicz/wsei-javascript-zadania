@@ -29,5 +29,21 @@ var animals = [
             }
         ]
     }
-
 ]
+
+for (var i = 0; i < animals.length; i++) {
+    print(animals[i],'');
+    console.log("");
+}
+
+function print(object, prefix) {
+    for (var property in object) {
+        if (obj.hasOwnProperty(property)) {
+            if (typeof object[property] == "object") {
+                print(object[property], prefix + " ");
+            } else {
+                console.log(`${prefix} ${property} : ${object[property]}`);
+            }
+        }
+    }
+}

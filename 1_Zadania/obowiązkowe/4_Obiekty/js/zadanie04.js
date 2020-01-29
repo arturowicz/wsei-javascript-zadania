@@ -9,3 +9,7 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+
+for (var field in movie) {
+    console.log(`${field} : ${movie[field]}`);
+}

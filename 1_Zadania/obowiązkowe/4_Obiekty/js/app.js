@@ -46,3 +46,23 @@ console.log(person.age);
 person.sayHello();
 
 // Zadanie 3
+
+var recipe = {
+    title: "Kebab",
+    servings: 1,
+};
+
+recipe["ingredients"] = ["Kurczak", "Sos", "Pomidor", "Sałata" ];
+
+
+for (var key in recipe) {
+    console.log(`${key} : ${recipe[key]}`)
+}
+
+// Zadanie 6
+var spoon = {
+    isExist: true
+};
+
+var fork = spoon;
+fork.isExist = false;
