@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+// Deklaracja funkcji 'jeden'
 function jeden() {
 
-    //Twoj komentarz ...
+    // Deklaracja zmiennej 'zmienna1'
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // Deklaracja funckji 'dwa'
     function dwa() {
 
-        //Twoj komentarz ...
+        // Wypisanie w konsoli wartości przechowywanej przez zmienną "zmienna1"
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // Deklaracja zmiennej 'zmienna 2' w obrębie funkcji 'dwa'
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // Wywołanie funkcji 'dwa'
     dwa();
 
-    //Twoj komentarz ...
+    // Próba wyświetlenia wartości zmiennej która jest w obrębie funkcji 'dwa' więc tutaj nie ma do niej dostępu
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// Wywołanie funckji 'jeden'
 jeden()

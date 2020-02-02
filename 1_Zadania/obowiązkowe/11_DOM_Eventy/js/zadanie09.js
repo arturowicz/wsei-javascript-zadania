@@ -19,10 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function innerFuncOne() {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
+      /*
+          Mozemy przypisać context wyżej do zmiennej, wtedy będziemy mieli do niej dostęp i możemy z niej skorzystać
+        */
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
 
   });
 
-})
+});

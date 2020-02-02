@@ -5,10 +5,9 @@ function callOtherFunction(nameOfFunction) {
     var randomNumber2 = Math.random() * 10;
     nameOfFunction(randomNumber1, randomNumber2);
 }
-
 callOtherFunction(function (a, b) {
     console.log("Pierwsza liczba:", a);
     console.log("Druga liczba", b)
     console.log("Wynik", a + b)
 })
-
+callOtherFunction((a, b) => console.log(`${a} + ${b} = ${a + b}`));
